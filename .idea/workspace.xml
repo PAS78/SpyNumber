@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e81672b-8eb3-446a-a814-efb86016f162" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/pas/Main.java" afterDir="false" />
+    <list default="true" id="6e81672b-8eb3-446a-a814-efb86016f162" name="Changes" comment="Amazing Numbers">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pas/Number.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pas/Number.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pas/NumberList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pas/NumberList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pas/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pas/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pas/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pas/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +80,18 @@
       <option name="presentableId" value="Default" />
       <updated>1675459627176</updated>
     </task>
+    <task id="LOCAL-00001" summary="Amazing Numbers">
+      <created>1675478153608</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675478153608</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Amazing Numbers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Amazing Numbers" />
   </component>
 </project>

@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NumberList {
-    private List<Number> list;
-    private long start;
-    private long length;
-    private String[] properties;
+    private final List<Number> list;
+    private final long start;
+    private final long length;
+    private final String[] properties;
 
     public NumberList(long start, long length, String... properties) {
         this.start = start;
@@ -21,12 +21,12 @@ public class NumberList {
     private List<Number> getNumbers() {
         List<Number> numberList = new ArrayList<>();
         switch (this.properties.length) {
-            case 0:
+            case 0 -> {
                 for (long i = this.start; i < this.start + this.length; i++) {
                     numberList.add(new Number(i));
                 }
-                break;
-            case 1:
+            }
+            case 1 -> {
                 long i = this.start;
                 while (numberList.size() < this.length) {
                     Number number = new Number(i);
@@ -35,8 +35,8 @@ public class NumberList {
                     }
                     i++;
                 }
-                break;
-            case 2:
+            }
+            case 2 -> {
                 long j = this.start;
                 while (numberList.size() < this.length) {
                     Number number = new Number(j);
@@ -45,10 +45,8 @@ public class NumberList {
                     }
                     j++;
                 }
-                break;
-            default:
-                System.out.println("There are more than two properties");
-                break;
+            }
+            default -> System.out.println("There are more than two properties");
         }
         return numberList;
     }

@@ -21,6 +21,7 @@ public class Request {
             default -> System.out.println("You have entered more than 4 parameters!");
         }
     }
+
     private void oneNumber() {
         long number = getNumber(this.parts[0]);
         if (number > 0) {
@@ -29,6 +30,7 @@ public class Request {
             printErrorMessage(1);
         }
     }
+
     private void printErrorMessage(int level, String... names) {
         switch (level) {
             case 1 -> System.out.println("The first parameter should be a natural number or zero.\n");
@@ -48,6 +50,7 @@ public class Request {
             }
         }
     }
+
     private void listNumbers() {
         long first = getNumber(this.parts[0]);
         long second = getNumber(this.parts[1]);
@@ -59,6 +62,7 @@ public class Request {
             printErrorMessage(2);
         }
     }
+
     private void oneProperty() {
         long first = getNumber(this.parts[0]);
         long second = getNumber(this.parts[1]);
@@ -72,6 +76,7 @@ public class Request {
             printErrorMessage(3, parts[2]);
         }
     }
+
     private void twoProperties() {
         long first = getNumber(this.parts[0]);
         long second = getNumber(this.parts[1]);
@@ -92,6 +97,7 @@ public class Request {
             printErrorMessage(5, this.parts[2], this.parts[3]);
         }
     }
+
     private boolean mutuallyExclusiveProperties() {
         return this.parts[2].equals("even") && this.parts[3].equals("odd") ||
                 this.parts[2].equals("odd") && this.parts[3].equals("even") ||
@@ -100,6 +106,7 @@ public class Request {
                 this.parts[2].equals("square") && this.parts[3].equals("sunny") ||
                 this.parts[2].equals("sunny") && this.parts[3].equals("square");
     }
+
     private long getNumber(String part) {
         try {
             long number = Long.parseLong(part);
@@ -108,6 +115,9 @@ public class Request {
             return -1;
         }
     }
-    private boolean isValidProperty(String part) { return this.propertiesList.contains(part.toUpperCase()); }
+
+    private boolean isValidProperty(String part) {
+        return this.propertiesList.contains(part.toUpperCase());
+    }
 }
 

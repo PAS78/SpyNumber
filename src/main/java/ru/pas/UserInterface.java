@@ -10,7 +10,7 @@ public class UserInterface {
     }
 
     public void run() {
-        System.out.println("Welcome to Amazing Numbers!\n\n"+
+        System.out.println("Welcome to Amazing Numbers!\n\n" +
                 "Supported requests:\n" +
                 "- enter a natural number to know its properties;\n" +
                 "- enter two natural numbers to obtain the properties of the list:\n" +
